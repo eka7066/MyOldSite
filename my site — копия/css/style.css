@@ -1,0 +1,379 @@
+html, body, h1, h2 {
+	margin: 0 auto;
+	padding: 0;
+}
+.menu .wrapper {
+	max-width: 1024px;
+	margin: 0 auto;
+	height: 300px;
+}
+.content_wrapper {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+.header {
+	background: #D9B7E5;
+}
+
+.header .wrapper p {
+	margin: 0 auto;
+	padding-bottom: 80px;
+	padding-top: 40px;
+
+}
+.menu {
+	background: #F0DDF7;
+	padding: 30px 0;
+	text-align: center;
+	border-bottom-style: solid;
+	border-bottom-color: #4C1360;
+	border-bottom-width: 3px;
+	max-height: 100px;
+}
+.menu li a {
+	color: inherit;
+	text-decoration: none;
+}
+.menu li {
+	display: inline; /*строчный эл-т делаем*/
+	margin-right: 20px;
+	color: #6E297A;
+	font-size: 30px;
+}
+.content {
+	background: #F0DDF7;
+	padding: 30px 0;
+	overflow: hidden; /*обтекание текста вокруг картинки*/
+}
+.content .left {
+	width: 300px;
+	float: left;
+	margin-right: 10px;
+}	
+.content p {
+	overflow: hidden;/*обтекание текста вокруг картинки*/
+}
+.content h2 {
+	overflow: hidden;/*обтекание текста вокруг картинки*/
+	text-align: center;
+}
+.content h1 {
+	border: 2px solid #6F3B78;
+	clear: both; /*текст под картинкой, отменяем обтекание*/
+}
+.wrapper .item {
+	width: 200px;
+	background: #EDD1F2;
+	padding: 10px 20px;
+	float: left; /*картинки выстроятся по левому краю*/
+	margin-right: 40px;
+}
+.wrapper .item img {
+	width:100%;
+}
+.footer {
+	background: #D9B7E5;
+
+}
+.footer .wrapper {
+	max-height: 150px;
+	background: #D9B7E5;	
+}
+.footer .wrapper p{
+	margin: 0 auto;	
+}
+.contact {
+	padding-top: 30px;
+}
+p {
+	margin-bottom: 150px;
+	text-align: justify;
+	padding-left: 15px;
+	font-size: 16pt;
+}
+.wrapper .discr {
+	text-align: right;
+	overflow: hidden;
+	width: 500px;
+	max-height: 512px;
+}
+.logo {
+	max-width: 150px;
+	float: left;
+	padding-left: 70px;
+}
+.top {
+	float: right;
+	width: 80px;
+	padding-right: 50px;
+	padding-top: 15px;
+	
+}
+#intro {
+	text-align: center;
+	font-family: Arial, Tahoma, Verdana, sans-serif;
+	font-size: 18pt;
+	max-height: 90px;	
+}
+#out {
+	text-align: center;
+	font-family: Arial, Tahoma, Verdana, sans-serif;
+	font-size: 16pt; 
+}
+.visage {
+	
+}
+.massage {
+	margin-bottom: 5px;
+	max-height: 300px;
+}
+.frontend {
+	margin-bottom: 5px;
+	max-height: 300px;
+}
+.psycho {
+	margin-top: 5px;
+}
+.contact {
+	text-align: center;
+}
+.button {
+	position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: 1px solid #6F3B78; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #AA86B0; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 20pt; /* Increase font size */
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+	height: 40px;
+}
+.button:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+.button.active {
+	visibility: visible;
+	opacity: 0.5;
+}
+#upp {
+	text-decoration: none;
+}
+
+.block1, .block2, .block3, .block4 {
+	max-height: 350px;
+	margin-bottom: 400px;
+}
+/*vis.html*/
+.content_wrapper_vis {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+#gallery {
+	width: 300px;	
+	margin: 0 auto;
+	text-align: center;
+	margin: 10px;	
+}
+#gallery .photos {
+	position: relative;
+	height: 450px;
+}
+
+#gallery .photos img {
+	width: 300px;	
+	position: absolute;
+	opacity: 0;
+	transition: opacity 1s;
+}
+#galleryWedding .pictures img {
+	width: 300px;	
+	position: absolute;
+	opacity: 0;
+	transition: opacity 1s;
+}
+#gallery .photos img.showed {
+	opacity: 1;
+}
+
+#galleryWedding {
+	width: 300px;	
+	margin: 0 auto;
+	text-align: center;
+	margin: 10px;	
+}
+#galleryWedding .pictures {
+	position: relative;
+	height: 450px;
+}
+
+
+#galleryWedding .pictures img {
+	width: 300px;
+	right: 205px;
+	position: absolute;
+	opacity: 0;
+	transition: opacity 1s;
+}
+#galleryWedding .pictures img.show {
+	opacity: 1;
+}
+.prev, .next {
+	border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #000000;
+	font-weight: 300;
+    border-radius: 10px;
+    background-color: rgba(207, 141, 221, 1);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+}
+.prev:hover {
+    background-color: rgba(224, 170, 236, 1);
+}
+.prev:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+.next:hover {
+    background-color: rgba(224, 170, 236, 1);
+}
+.next:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+/*prog.html*/
+.img_prog {
+	float: left;
+	margin-top: 15px;
+}
+.discr_prog {
+	text-align: justify;
+	overflow: hidden;
+	max-width: 650px;
+	max-height: 250px;
+	font-family: Arial, Tahoma, Verdana, sans-serif;
+}
+#css_right {
+	float: right;
+}
+
+/*mass.html*/
+.discr_mass {
+	text-align: justify;
+	overflow: hidden;
+	max-width: 650px;
+	max-height: 250px;
+	font-family: Arial, Tahoma, Verdana, sans-serif;
+}
+@media all and (max-width: 1000px){
+	html, body {
+		min-width: 400px;
+	}
+	div #intro {
+		font-size: 15pt;
+		text-align: center;
+	}
+	div #bas {
+		display: none;
+	}
+	div #ser {
+		display: none;
+	}
+	div #begin {
+		max-height: 200px;
+	}
+	.header {
+		height: 150px;
+	}
+	.menu h1, a {
+		font-size: 18pt;
+	}
+}
+
+
+@media all and (max-width: 800px){
+	html, body {
+		min-width: 400px;
+	}
+	div #intro {
+		font-size: 14pt;
+		text-align: center;
+	}
+	div #bas {
+		display: none;
+	}
+	div #ser {
+		display: none;
+	}
+	.logo {
+		left: 0;
+		width: 150px;
+		margin: 0;
+		padding: 7px;
+	}
+	.header {
+		height: 160px;
+	}
+	.menu h1, a {
+		font-size: 17pt;
+	}
+}
+
+@media all and (max-width: 700px){
+	html, body {
+		min-width: 400px;
+	}
+	div #intro {
+		font-size: 10pt;
+		text-align: center;
+	}
+	div #bas {
+		display: none;
+	}
+	div #ser {
+		display: none;
+	}
+	.logo {
+		left: 0;
+		width: 120px;
+		margin: 0;
+		padding: 7px;
+	}
+	.header {
+		height: 130px;
+	}
+	.menu h1, a {
+		font-size: 16pt;
+	}
+}
+@media all and (max-width: 500px){
+	html, body {
+		min-width: 400px;
+	}
+	div #intro {
+		display: none;
+	}
+	div #bas {
+		display: none;
+	}
+	div #ser {
+		display: none;
+	}
+	.menu h1, a {
+		font-size: 14pt;
+	}
+	.logo {
+		left: 0;
+		width: 120px;
+		margin: 0;
+		padding: 7px;
+	}
+}
